@@ -6,6 +6,10 @@ BowlingGame.prototype.roll = function (pins) {
     this.rolls.push(pins);
 };
 
+BowlingGame.prototype.getNumberRolls = function () {
+    return this.rolls.length;
+};
+
 BowlingGame.prototype.score = function () {
     var result = 0;
     var rollIndex = 0; 
